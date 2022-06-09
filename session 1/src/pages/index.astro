@@ -1,0 +1,24 @@
+---
+import Base from '../layout/Base.astro'
+import {Markdown} from 'astro/components'
+---
+
+<style>
+	img {width:16%;}
+</style>
+
+<Base title="Title of Home">
+	<h1>Hello Astro Session One</h1>	
+	<p>Here is a a zoom class photo!</p>
+	<img src="public/images/group-photo.png" alt="Astro Workshop Photo">
+
+	<p>Hommeeee Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eveniet provident delectus dolor qui ipsam cum, ad, dolorum odio hic illo consectetur? Illum deserunt error, tempore odio velit accusamus imperat.</p>	
+
+	<Markdown>
+		## Insert insta-markdown formating here
+
+		More mardown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	</Markdown>
+
+</Base>
+

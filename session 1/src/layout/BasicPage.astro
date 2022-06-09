@@ -1,0 +1,20 @@
+---
+import Base from './Base.astro'
+console.log(Astro.props)
+const {title} = Astro.props.content // n.b! Slightly different destructuring syntax viz Base.astro... + .content
+const zzVar = 'Dog'
+---
+
+<!-- <Base title={title}>... If the variable and property have the same name --> 
+<Base {title}>
+
+	<div class="wrap">
+		<h1>{title}</h1>
+		
+		<!-- If you have a new page layout, you always need default fallback slot -->
+		<slot>This is a default Basic Page...</slot>
+	</div>
+
+	
+
+</Base>
